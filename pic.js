@@ -1,0 +1,6 @@
+
+
+function wall(){
+    alert("test")
+}
+

@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="pic.js"></script>
+
         <style>
-            #wall{
+            .wall{
                background-color:black;
                height: 25px;
                width: 25px;
             }
-            #wall:hover{
-                background-color:red
-            }
-            #path{
+
+            .path{
                 background-color:white;
                 height: 25px;
                 width: 25px;
             }
             #exit{
-                background-color:gold;
+                
                 height: 25px;
                 width: 25px;
             }
@@ -26,91 +24,96 @@
                 height:25px;
                 width:25px;
             }
+            img{
+                height: 25px;
+                width: 25px;
+            }
         </style>
     </head>
     <body>
+       
         <table cellspacing="0">
             <tr>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+            </tr>
+            <tr>
                 <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()' class="wall"></td>
+            </tr>
+            <tr>
                 <td onmouseover='wall()'class="wall"></td>
-                <td class="exit"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+            </tr>
+            <tr>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+            </tr>
+            <tr>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()' id="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()' class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
+                <td onmouseover='wall()'class="wall"></td> 
             </tr>
             <tr>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-            </tr>
-            <tr>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-            </tr>
-            <tr>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()' id="wall"></td>
-            </tr>
-            <tr>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td onmouseover='wall()'id="wall"></td>
-                <td id="path"></td>
-                <td onmouseover='wall()'id="wall"></td> 
-            </tr>
-            <tr>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='wall()' id="wall"></td>
-                <td onmouseover='start()' class="start"></td>
-                <td onmouseover='wall()' id="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='wall()' class="wall"></td>
+                <td onmouseover='start()' id="start"></td>
+                <td onmouseover='wall()' class="wall"></td>
           </tr>
         </table>
-        
+        <script src="pic.js"> </script>
     </body>
 </html>

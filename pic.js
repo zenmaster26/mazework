@@ -1,5 +1,6 @@
+var score = 0
 var lives = 3
-var loot= true;
+var sword = false
 function wall(){
         var b = document.getElementById("exit").style.visibility = "hidden";
         
@@ -15,6 +16,20 @@ function wall(){
             if(lives == 0){
                 window.location.replace("pic2.html")
             }
+            var c = document.querySelectorAll(".point");
+        var i;  
+        for(i = 0; i <  c.length; i++){
+                c[i].style.visibility = "hidden";
+                
+            
+            }
+            var h = document.querySelectorAll(".hollow");
+            var i;  
+            for(i = 0; i <  h.length; i++){
+                    h[i].style.visibility = "hidden";
+                    
+                
+                }
 }
 
 function start(){
@@ -26,6 +41,34 @@ function start(){
     for(i = 0; i <  x.length; i++){
             x[i].style.visibility = "visible";
         }
-    
+        var c = document.querySelectorAll(".point");
+        var i;  
+        for(i = 0; i <  c.length; i++){
+                c[i].style.visibility = "visible";
+            }
+            var h = document.querySelectorAll(".hollow");
+            var i;  
+            for(i = 0; i <  h.length; i++){
+                    h[i].style.visibility = "visible";
+                }
+    score = 0;
+}
+
+function addscore(){
+    score += 100;
+    console.log(score)
+}
+
+function blade(){
+    sword=true
+    if(sword=true){
+        var h = document.querySelectorAll(".hollow");
+        var i;  
+        for(i = 0; i <  h.length; i++){
+                h[i].style.visibility = "hidden";
+                
+            
+            }
+    }
 }
 

@@ -30,6 +30,13 @@ function wall(){
                     
                 
                 }
+                var s = document.querySelectorAll(".sword");
+                var i;  
+                for(i = 0; i <  s.length; i++){
+                        s[i].style.visibility = "hidden";
+                        
+                    
+                    }
 }
 
 function start(){
@@ -51,6 +58,11 @@ function start(){
             for(i = 0; i <  h.length; i++){
                     h[i].style.visibility = "visible";
                 }
+                var s = document.querySelectorAll(".sword");
+                var i;  
+                for(i = 0; i <  s.length; i++){
+                        s[i].style.visibility = "visible";
+                    }
     score = 0;
 }
 
@@ -70,5 +82,9 @@ function blade(){
             
             }
     }
+}
+
+function win(){
+    window.location.replace("pic2.html")
 }
 

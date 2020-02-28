@@ -1,6 +1,7 @@
 var score = 0
 var lives = 3
 var sword = false
+document.getElementById("lives").innerHTML =  lives + " lives"
 function wall(){
         var b = document.getElementById("exit").style.visibility = "hidden";
         
@@ -12,7 +13,7 @@ function wall(){
             
             }
             lives -= 1;
-            console.log(lives)
+            document.getElementById("lives").innerHTML = lives + " lives"
             if(lives == 0){
                 window.location.replace("pic2.html")
             }

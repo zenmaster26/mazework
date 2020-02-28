@@ -46,6 +46,7 @@
         </style>
     </head>
     <body>
+        <p id="lives"></p>
         <p id=winscreen></p>
         <button onclick="window.location.replace('pic2.html')">Back to menu</button>
 
@@ -63,19 +64,19 @@
             </tr>
             <tr>
                 <td onmouseover='wall()' class="wall"></td>
-                <td onmouseover='wall()' class="wall"></td>
                 <td onmouseover='win()' id="exit"><img src="images/1.jpg"></td>
                 <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
                 <td onmouseover='wall()' class="wall"></td>
                 <td class="path"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"></td>
                 <td onmouseover='wall()' class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()' class="hollow"></td>
                 <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td class="path"></td>
                 <td onmouseover='wall()'class="wall"></td>
@@ -83,7 +84,7 @@
             </tr>
             <tr>
                 <td onmouseover='wall()' class="wall"></td>
-                <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
                 <td class="path"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"></td>
                 <td class="path"></td>
@@ -103,7 +104,7 @@
             </tr>
             <tr>
                 <td onmouseover='wall()' class="wall"></td>
-                <td onmouseover='wall()' class="wall"></td>
+                <td class="path"></td>
                 <td class="path"></td>
                 <td class="path"></td>
                 <td class="path"></td>
@@ -112,10 +113,10 @@
                 <td onmouseover='wall()' class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='blade(); style="visibility: hidden;"'class="sword"><img src="images/sword.png"></td>
                 <td onmouseover='wall()'class="wall"></td>
+                <td class="path"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td class="path"></td>

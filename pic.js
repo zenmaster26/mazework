@@ -68,7 +68,7 @@ function start(){
 
 function addscore(){
     score += 100;
-    console.log(score)
+    console.log(score) 
 }
 
 function blade(){
@@ -84,7 +84,43 @@ function blade(){
     }
 }
 
+
+
 function win(){
-    window.location.replace("pic2.html")
+    var b = document.getElementById("exit").style.visibility = "hidden";
+        
+    var x = document.querySelectorAll(".wall");
+    var i;  
+    for(i = 0; i <  x.length; i++){
+            x[i].style.visibility = "hidden";
+            
+        
+        }   
+        var c = document.querySelectorAll(".point");
+    var i;  
+    for(i = 0; i <  c.length; i++){
+            c[i].style.visibility = "hidden";
+            
+        
+        }
+        var h = document.querySelectorAll(".hollow");
+        var i;  
+        for(i = 0; i <  h.length; i++){
+                h[i].style.visibility = "hidden";
+                
+            
+            }
+            var s = document.querySelectorAll(".sword");
+            var i;  
+            for(i = 0; i <  s.length; i++){
+                    s[i].style.visibility = "hidden";
+                    
+                
+                }
+                var l = document.getElementById("start").style.visibility = "hidden";
+            
+    
+    document.getElementById("winscreen").innerHTML = "Your score is: " + score
 }
+
 

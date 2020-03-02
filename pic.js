@@ -124,4 +124,25 @@ function win(){
     document.getElementById("winscreen").innerHTML = "Your score is: " + score
 }
 
-
+window.onload = () => {
+    startSetTimeoutAnimation();
+  };
+  
+  function startSetTimeoutAnimation() {
+    const refreshRate = 1000 / 60;
+    const maxXPosition = 135;
+    let rect = document.getElementById('rect0');
+    let speedX = 1;
+    let positionX = 0;
+    document.getElementById('rect0').onmouseover = function() {wall()};
+  
+    window.setInterval(() => {
+      positionX = positionX + speedX;
+      if (positionX > maxXPosition || positionX < 0) {
+        speedX = speedX * (-1);
+      }
+      rect.style.left = positionX + 'px';
+    }, refreshRate);
+  }
+  
+  

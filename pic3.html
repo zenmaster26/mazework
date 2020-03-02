@@ -42,14 +42,21 @@
      height: 11px;
      width: 11px;
  }
-        </style>
+ </style>
     </head>
     <body>
+    <!--
+        Start: <td onmouseover='start()'id="start"></td>
+        End: <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+        Path: <td onmouseover='path()'class="path"></td>
+        Wall: <td onmouseover='wall()'class="wall"></td>
+        Hollow: <td onmouseover='wall()'class="hollow"></td>
+        Point: <td onmouseover='addScore()'style="visibility: hidden;"class="wall"></td>
+    -->
         <table cellspacing="0">
             <tr>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
@@ -57,7 +64,6 @@
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
@@ -65,18 +71,20 @@
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
             </tr>
             <tr>
+                <td onmouseover='start()'id="start"></td>
+                <td onmouseover='path()'class="path"></td>
+                <td onmouseover='path()'class="path"></td>
+                <td onmouseover='wall()'class="hollow"></td>
+                <td onmouseover='path()'class="path"></td>
                 <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='addScore()'style="visibility: hidden;"class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>

@@ -10,7 +10,7 @@
      width: 15px;
  }
  .hollow{
-     background-color:red;
+     
      height: 15px;
      width: 15px;
  }
@@ -32,7 +32,6 @@
  .point{
      height:15px;
      width:15px;
-     background-color:silver
  }
  .sword{
      background-color:rgba(173, 216, 230, 0.514);

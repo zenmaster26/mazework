@@ -4,7 +4,9 @@ var sword = false
 document.getElementById("lives").innerHTML =  lives + " lives"
 function wall(){
         var b = document.getElementById("exit").style.visibility = "hidden";
-        
+        var r = document.getElementById("rect0").style.visibility = "hidden";
+        var r1 = document.getElementById("rect1").style.visibility = "hidden";
+        document.getElementById("keyred").style.visibility = "hidden";
         var x = document.querySelectorAll(".wall");
         var i;  
         for(i = 0; i <  x.length; i++){
@@ -43,6 +45,9 @@ function wall(){
 function start(){
     
     document.getElementById("exit").style.visibility = "visible"
+    document.getElementById("rect0").style.visibility = "visible"
+    document.getElementById("rect1").style.visibility = "visible"
+    document.getElementById("keyred").style.visibility = "visible"
     
     var x = document.querySelectorAll(".wall");
     var i;  
@@ -89,6 +94,9 @@ function blade(){
 
 function win(){
     var b = document.getElementById("exit").style.visibility = "hidden";
+    var r = document.getElementById("rect0").style.visibility = "hidden";
+    var r1 = document.getElementById("rect1").style.visibility = "hidden";
+    document.getElementById("keyred").style.visibility = "hidden";
         
     var x = document.querySelectorAll(".wall");
     var i;  
@@ -126,6 +134,7 @@ function win(){
 
 window.onload = () => {
     startSetTimeoutAnimation();
+    startSetTimeoutAnimation2();
   };
   
   function startSetTimeoutAnimation() {
@@ -144,5 +153,21 @@ window.onload = () => {
       rect.style.left = positionX + 'px';
     }, refreshRate);
   }
+
+    function startSetTimeoutAnimation2() {
+    const refreshRate = 1000 / 60;
+    const maxYPosition = 135;
+    let rect = document.getElementById('rect1');
+    let speedY = 1;
+    let positionY = 0;
+    document.getElementById('rect1').onmouseover = function() {wall()};
   
+    window.setInterval(() => {
+      positionY = positionY + speedY;
+      if (positionY > maxYPosition || positionY < 0) {
+        speedY = speedY * (-1);
+      }
+      rect.style.top = positionY + 'px';
+    }, refreshRate);
+  }
   

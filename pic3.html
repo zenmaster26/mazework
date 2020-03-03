@@ -10,7 +10,7 @@
         <button onclick="window.location.replace('pic2.html')">Back to menu</button>
         
        <div style="margin-left: 40%; margin-top: 15%">
-        <table id="mazecontainer">
+        <table cellspacing="0" id="mazecontainer">
             <tr>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
@@ -179,7 +179,7 @@
                 <td onmouseover='wall()' class="wall"></td>
                 <td class="path"></td>
                 <td onmouseover='wall()' class="wall"></td>
-                <td class="path"></td>
+                <td class="path"><div id="rect4" class="rect timeout"></div></td>
                 <td class="path"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"></td>
                 <td class="path"></td>
@@ -361,7 +361,7 @@
         </tr>
         <tr>
             <td onmouseover='wall()'class="wall"></td>
-            <td class="path"></td>
+            <td class="path"><div id="rect2" class="rect timeout"></div></td>
             <td class="path"></td>
             <td onmouseover='blade(); style="visibility: hidden;"'class="sword"><img src="images/sword3.png"></td>
             <td onmouseover='wall()'class="wall"></td>
@@ -425,7 +425,7 @@
             <td onmouseover='wall()'class="wall"></td>
             <td class="path"></td>
             <td onmouseover='wall()'class="wall"></td>
-            <td class="path"></td>
+            <td class="path"><div id="rect3" class="rect timeout"></div></td>
             <td onmouseover='wall()'class="wall"></td>
         </tr>
         <tr>

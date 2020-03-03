@@ -13,6 +13,9 @@ function wall(){
         document.getElementById("keyred").style.visibility = "hidden";
         document.getElementById("doorred").style.visibility = "hidden"
         var x = document.querySelectorAll(".wall");
+        document.getElementById("rect2").style.visibility = "hidden";
+        document.getElementById("rect3").style.visibility = "hidden";
+        document.getElementById("rect4").style.visibility = "hidden";
         var i;  
         for(i = 0; i <  x.length; i++){
                 x[i].style.visibility = "hidden";
@@ -54,6 +57,9 @@ function start(){
     document.getElementById("rect1").style.visibility = "visible"
     document.getElementById("keyred").style.visibility = "visible"
     document.getElementById("doorred").style.visibility = "visible"
+    document.getElementById("rect2").style.visibility = "visible"
+    document.getElementById("rect3").style.visibility = "visible"
+    document.getElementById("rect4").style.visibility = "visible"
     
     var x = document.querySelectorAll(".wall");
     var i;  
@@ -102,6 +108,9 @@ function win(){
     var b = document.getElementById("exit").style.visibility = "hidden";
     var r = document.getElementById("rect0").style.visibility = "hidden";
     var r1 = document.getElementById("rect1").style.visibility = "hidden";
+    document.getElementById("rect2").style.visibility = "hidden";
+    document.getElementById("rect3").style.visibility = "hidden";
+    document.getElementById("rect4").style.visibility = "hidden";
     document.getElementById("keyred").style.visibility = "hidden";
     document.getElementById("doorred").style.visibility = "hidden"
         
@@ -142,11 +151,14 @@ function win(){
 window.onload = () => {
     startSetTimeoutAnimation();
     startSetTimeoutAnimation2();
+    vObstacle1();
+    vObstacle2();
+    vObstacle3();
   };
   // VERTICAL ANIMATION
   function startSetTimeoutAnimation() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 115;
+    const maxXPosition = 100;
     let rect = document.getElementById('rect0');
     let speedX = 1;
     let positionX = 0;
@@ -163,7 +175,7 @@ window.onload = () => {
   // HORIZONTAL ANIMATION
     function startSetTimeoutAnimation2() {
     const refreshRate = 1000 / 60;
-    const maxYPosition = 155;
+    const maxYPosition = 135;
     let rect = document.getElementById('rect1');
     let speedY = 0.7;
     let positionY = 0;
@@ -180,50 +192,50 @@ window.onload = () => {
   //LEVEL 1
   function vObstacle1() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 75;
-    let rect = document.getElementById('rect0');
-    let speedX = 1;
-    let positionX = 0;
-    document.getElementById('rect0').onmouseover = function() {wall()};
+    const maxY1Position = 75;
+    let rect = document.getElementById('rect2');
+    let speedY1 = 1;
+    let positionY1 = 0;
+    document.getElementById('rect2').onmouseover = function() {wall()};
   
     window.setInterval(() => {
-      positionX = positionX + speedX;
-      if (positionX > maxXPosition || positionX < 0) {
-        speedX = speedX * (-1);
+      positionY1 = positionY1 + speedY1;
+      if (positionY1 > maxY1Position || positionY1 < 0) {
+        speedY1 = speedY1 * (-1);
       }
-      rect.style.left = positionX + 'px';
+      rect.style.top = positionY1 + 'px';
     }, refreshRate);
   }
   function vObstacle2() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 75;
-    let rect = document.getElementById('rect0');
-    let speedX = 1;
-    let positionX = 0;
-    document.getElementById('rect0').onmouseover = function() {wall()};
+    const maxY2Position = 38;
+    let rect = document.getElementById('rect3');
+    let speedY2 = 1;
+    let positionY2 = 0;
+    document.getElementById('rect3').onmouseover = function() {wall()};
   
     window.setInterval(() => {
-      positionX = positionX + speedX;
-      if (positionX > maxXPosition || positionX < 0) {
-        speedX = speedX * (-1);
+      positionY2 = positionY2 + speedY2;
+      if (positionY2 > maxY2Position || positionY2 < 0) {
+        speedY2 = speedY2 * (-1);
       }
-      rect.style.left = positionX + 'px';
+      rect.style.top = positionY2 + 'px';
     }, refreshRate);
   }
   function vObstacle3() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 135;
-    let rect = document.getElementById('rect0');
-    let speedX = 1;
-    let positionX = 0;
-    document.getElementById('rect0').onmouseover = function() {wall()};
+    const maxY3Position = 67;
+    let rect = document.getElementById('rect4');
+    let speedY3 = 1;
+    let positionY3 = 0;
+    document.getElementById('rect4').onmouseover = function() {wall()};
   
     window.setInterval(() => {
-      positionX = positionX + speedX;
-      if (positionX > maxXPosition || positionX < 0) {
-        speedX = speedX * (-1);
+      positionY3 = positionY3 + speedY3;
+      if (positionY3 > maxY3Position || positionY3 < 0) {
+        speedY3 = speedY3 * (-1);
       }
-      rect.style.left = positionX + 'px';
+      rect.style.top = positionY3 + 'px';
     }, refreshRate);
   }
   function vObstacle4() {

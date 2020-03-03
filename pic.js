@@ -146,7 +146,7 @@ window.onload = () => {
   // VERTICAL ANIMATION
   function startSetTimeoutAnimation() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 85;
+    const maxXPosition = 115;
     let rect = document.getElementById('rect0');
     let speedX = 1;
     let positionX = 0;

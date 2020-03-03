@@ -148,7 +148,7 @@ window.onload = () => {
     const refreshRate = 1000 / 60;
     const maxXPosition = 85;
     let rect = document.getElementById('rect0');
-    let speedX = 0.7;
+    let speedX = 1;
     let positionX = 0;
     document.getElementById('rect0').onmouseover = function() {wall()};
   
@@ -163,7 +163,7 @@ window.onload = () => {
   // HORIZONTAL ANIMATION
     function startSetTimeoutAnimation2() {
     const refreshRate = 1000 / 60;
-    const maxYPosition = 90;
+    const maxYPosition = 155;
     let rect = document.getElementById('rect1');
     let speedY = 0.7;
     let positionY = 0;

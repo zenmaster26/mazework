@@ -136,7 +136,7 @@ window.onload = () => {
     startSetTimeoutAnimation();
     startSetTimeoutAnimation2();
   };
-  
+  // VERTICAL ANIMATION
   function startSetTimeoutAnimation() {
     const refreshRate = 1000 / 60;
     const maxXPosition = 135;
@@ -153,7 +153,7 @@ window.onload = () => {
       rect.style.left = positionX + 'px';
     }, refreshRate);
   }
-
+  // HORIZONTAL ANIMATION
     function startSetTimeoutAnimation2() {
     const refreshRate = 1000 / 60;
     const maxYPosition = 135;
@@ -170,4 +170,86 @@ window.onload = () => {
       rect.style.top = positionY + 'px';
     }, refreshRate);
   }
+  //LEVEL 1
+  function vObstacle1() {
+    const refreshRate = 1000 / 60;
+    const maxXPosition = 75;
+    let rect = document.getElementById('rect0');
+    let speedX = 1;
+    let positionX = 0;
+    document.getElementById('rect0').onmouseover = function() {wall()};
   
+    window.setInterval(() => {
+      positionX = positionX + speedX;
+      if (positionX > maxXPosition || positionX < 0) {
+        speedX = speedX * (-1);
+      }
+      rect.style.left = positionX + 'px';
+    }, refreshRate);
+  }
+  function vObstacle2() {
+    const refreshRate = 1000 / 60;
+    const maxXPosition = 75;
+    let rect = document.getElementById('rect0');
+    let speedX = 1;
+    let positionX = 0;
+    document.getElementById('rect0').onmouseover = function() {wall()};
+  
+    window.setInterval(() => {
+      positionX = positionX + speedX;
+      if (positionX > maxXPosition || positionX < 0) {
+        speedX = speedX * (-1);
+      }
+      rect.style.left = positionX + 'px';
+    }, refreshRate);
+  }
+  function vObstacle3() {
+    const refreshRate = 1000 / 60;
+    const maxXPosition = 135;
+    let rect = document.getElementById('rect0');
+    let speedX = 1;
+    let positionX = 0;
+    document.getElementById('rect0').onmouseover = function() {wall()};
+  
+    window.setInterval(() => {
+      positionX = positionX + speedX;
+      if (positionX > maxXPosition || positionX < 0) {
+        speedX = speedX * (-1);
+      }
+      rect.style.left = positionX + 'px';
+    }, refreshRate);
+  }
+  function vObstacle4() {
+    const refreshRate = 1000 / 60;
+    const maxXPosition = 45;
+    let rect = document.getElementById('rect0');
+    let speedX = 1;
+    let positionX = 0;
+    document.getElementById('rect0').onmouseover = function() {wall()};
+  
+    window.setInterval(() => {
+      positionX = positionX + speedX;
+      if (positionX > maxXPosition || positionX < 0) {
+        speedX = speedX * (-1);
+      }
+      rect.style.left = positionX + 'px';
+    }, refreshRate);
+  }
+  function hObstacle1() {
+    const refreshRate = 1000 / 60;
+    const maxYPosition = 105;
+    let rect = document.getElementById('rect1');
+    let speedY = 1;
+    let positionY = 0;
+    document.getElementById('rect1').onmouseover = function() {wall()};
+  
+    window.setInterval(() => {
+      positionY = positionY + speedY;
+      if (positionY > maxYPosition || positionY < 0) {
+        speedY = speedY * (-1);
+      }
+      rect.style.top = positionY + 'px';
+    }, refreshRate);
+  }
+  //LEVEL 2
+  //LEVEL 3

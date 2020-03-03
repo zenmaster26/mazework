@@ -4,43 +4,43 @@
         <style>
             .wall{
     background-color:black;
-    height: 11px;
-    width: 11px;
+    height: 15px;
+    width: 15px;
  }
 
  .path{
      background-color:white;
-     height: 11px;
-     width: 11px;
+     height: 15px;
+     width: 15px;
  }
  .hollow{
      background-color:red;
-     height: 11px;
-     width: 11px;
+     height: 15px;
+     width: 15px;
  }
  #exit{
      
-     height: 11px;
-     width: 11px;
+     height: 15px;
+     width: 15px;
  }
  #start{
      background-color:green;
-     height:11px;
-     width:11px;
+     height:15px;
+     width:15px;
  }
  img{
-     height: 11px;
-     width: 11px;
+     height: 15px;
+     width: 15px;
  }
  .point{
-     height:11px;
-     width:11px;
+     height:15px;
+     width:15px;
      background-color:silver
  }
  .sword{
      background-color:blue;
-     height: 11px;
-     width: 11px;
+     height: 15px;
+     width: 15px;
  }
  </style>
     </head>
@@ -53,8 +53,13 @@
         Hollow: <td onmouseover='wall()'class="hollow"></td>
         Point: <td onmouseover='addScore()'style="visibility: hidden;"class="wall"></td>
     -->
+    <p id="lives"></p>
+        <p id=winscreen></p>
+        <button onclick="window.location.replace('pic2.html')">Back to menu</button>
+        <div style="margin-left: 40%; margin-top: 15%">
         <table cellspacing="0">
             <tr>
+                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
@@ -99,28 +104,6 @@
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='path()'class="path"></td>
                 <td onmouseover='wall()'class="wall"></td>
-            </tr>
-            <tr>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
             </tr>
             <tr>
@@ -145,6 +128,31 @@
                 <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+            </tr>
+            <tr>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
             </tr>
             <tr>
                 <td onmouseover='wall()'class="wall"></td>
@@ -168,6 +176,7 @@
                 <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
             </tr>
             <tr>
                 <td onmouseover='wall()'class="wall"></td>
@@ -189,6 +198,7 @@
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
             </tr>
@@ -260,6 +270,7 @@
             <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
+            <td onmouseover='wall()'class="wall"></td>
         </tr>
         <tr>
             <td onmouseover='wall()'class="wall"></td>
@@ -282,51 +293,6 @@
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-        </tr>
-        <tr>
-            <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-        </tr>
-        <tr>
-            <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
         </tr>
@@ -352,6 +318,7 @@
                 <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
         </tr>
         <tr>
             <td onmouseover='wall()'class="wall"></td>
@@ -373,6 +340,55 @@
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+        </tr>
+        <tr>
+            <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+        </tr>
+        <tr>
+            <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+                <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
                 <td onmouseover='wall()'class="wall"></td>
         </tr>
@@ -396,6 +412,7 @@
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+            <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
         </tr>
@@ -419,6 +436,7 @@
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+            <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
             <td onmouseover='wall()'class="wall"></td>
     </tr>
@@ -444,28 +462,6 @@
         <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
         <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
-    </tr>
-    <tr>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='wall()'class="wall"></td>
-        <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
-        <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
     </tr>
     <tr>
@@ -490,6 +486,31 @@
         <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
         <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+    </tr>
+    <tr>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
     </tr>
     <tr>
         <td onmouseover='wall()'class="wall"></td>
@@ -513,6 +534,7 @@
         <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
         <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
+        <td onmouseover='wall()'class="wall"></td>
     </tr>
     <tr>
         <td onmouseover='wall()'class="wall"></td>
@@ -534,10 +556,12 @@
         <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='win()' id="exit"><img src="../1.jpg"></td>
+        <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
         <td onmouseover='wall()'class="wall"></td>
     </tr>
         </table>
+    </div>
         <script src="pic.js"> </script>
     </body>
 </html>

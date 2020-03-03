@@ -1,48 +1,48 @@
 .wall{
     background-color:black;
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
  }
 
  .path{
      background-color:white;
-     height: 25px;
-     width: 25px;
+     height: 15px;
+     width: 15px;
  }
  .hollow{
      background-color:red;
-     height: 25px;
-     width: 25px;
+     height: 15px;
+     width: 15px;
  }
  #exit{
-     background-color: rgba(255, 217, 0, 0.514);
-     height: 25px;
-     width: 25px;
+     background-color: rgba(255, 217, 0, 0.5);
+     height: 15px;
+     width: 15px;
  }
  #start{
      background-color:green;
-     height:25px;
-     width:25px;
+     height:15px;
+     width:15px;
  }
  img{
-     height: 25px;
-     width: 25px;
+     height: 15px;
+     width: 15px;
  }
  .point{
-     height:25px;
-     width:25px;
+     height:15px;
+     width:15px;
      background-color:silver
  }
  .sword{
      background-color:rgba(173, 216, 230, 0.514);
-     height: 25px;
-     width: 25px;
+     height: 15px;
+     width: 15px;
  }
  
  .rect {
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
   }
   
   .timeout {
@@ -53,5 +53,8 @@
     background: red;
   }
 #keyred{
+    background-color: crimson;
+}
+#doorred{
     background-color: crimson;
 }

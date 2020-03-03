@@ -2,11 +2,16 @@ var score = 0
 var lives = 3
 var sword = false
 document.getElementById("lives").innerHTML =  lives + " lives"
+function key1(){
+    document.getElementById("keyred").style.visibility = "hidden"
+    document.getElementById("doorred").style.visibility = "hidden"
+}
 function wall(){
         var b = document.getElementById("exit").style.visibility = "hidden";
         var r = document.getElementById("rect0").style.visibility = "hidden";
         var r1 = document.getElementById("rect1").style.visibility = "hidden";
         document.getElementById("keyred").style.visibility = "hidden";
+        document.getElementById("doorred").style.visibility = "hidden"
         var x = document.querySelectorAll(".wall");
         var i;  
         for(i = 0; i <  x.length; i++){
@@ -48,6 +53,7 @@ function start(){
     document.getElementById("rect0").style.visibility = "visible"
     document.getElementById("rect1").style.visibility = "visible"
     document.getElementById("keyred").style.visibility = "visible"
+    document.getElementById("doorred").style.visibility = "visible"
     
     var x = document.querySelectorAll(".wall");
     var i;  
@@ -97,6 +103,7 @@ function win(){
     var r = document.getElementById("rect0").style.visibility = "hidden";
     var r1 = document.getElementById("rect1").style.visibility = "hidden";
     document.getElementById("keyred").style.visibility = "hidden";
+    document.getElementById("doorred").style.visibility = "hidden"
         
     var x = document.querySelectorAll(".wall");
     var i;  
@@ -139,9 +146,9 @@ window.onload = () => {
   // VERTICAL ANIMATION
   function startSetTimeoutAnimation() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 135;
+    const maxXPosition = 85;
     let rect = document.getElementById('rect0');
-    let speedX = 1;
+    let speedX = 0.7;
     let positionX = 0;
     document.getElementById('rect0').onmouseover = function() {wall()};
   
@@ -156,9 +163,9 @@ window.onload = () => {
   // HORIZONTAL ANIMATION
     function startSetTimeoutAnimation2() {
     const refreshRate = 1000 / 60;
-    const maxYPosition = 135;
+    const maxYPosition = 90;
     let rect = document.getElementById('rect1');
-    let speedY = 1;
+    let speedY = 0.7;
     let positionY = 0;
     document.getElementById('rect1').onmouseover = function() {wall()};
   

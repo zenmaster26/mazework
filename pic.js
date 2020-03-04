@@ -1,7 +1,7 @@
 var score = 0
 var lives = 3
 var sword = false
-document.getElementById("lives").innerHTML =  lives + " lives"
+document.getElementById("lives").innerHTML =  lives + " Lives Left"
 function key1(){
     document.getElementById("keyred").style.visibility = "hidden"
     document.getElementById("doorred").style.visibility = "hidden"

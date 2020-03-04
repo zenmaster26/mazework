@@ -158,7 +158,7 @@ window.onload = () => {
   // VERTICAL ANIMATION
   function startSetTimeoutAnimation() {
     const refreshRate = 1000 / 60;
-    const maxXPosition = 100;
+    const maxXPosition = 130;
     let rect = document.getElementById('rect0');
     let speedX = 1;
     let positionX = 0;
@@ -175,7 +175,7 @@ window.onload = () => {
   // HORIZONTAL ANIMATION
     function startSetTimeoutAnimation2() {
     const refreshRate = 1000 / 60;
-    const maxYPosition = 135;
+    const maxYPosition = 195;
     let rect = document.getElementById('rect1');
     let speedY = 0.7;
     let positionY = 0;
@@ -192,7 +192,7 @@ window.onload = () => {
   //LEVEL 1
   function vObstacle1() {
     const refreshRate = 1000 / 60;
-    const maxY1Position = 75;
+    const maxY1Position = 95;
     let rect = document.getElementById('rect2');
     let speedY1 = 1;
     let positionY1 = 0;
@@ -208,7 +208,7 @@ window.onload = () => {
   }
   function vObstacle2() {
     const refreshRate = 1000 / 60;
-    const maxY2Position = 38;
+    const maxY2Position = 45;
     let rect = document.getElementById('rect3');
     let speedY2 = 1;
     let positionY2 = 0;
@@ -224,7 +224,7 @@ window.onload = () => {
   }
   function vObstacle3() {
     const refreshRate = 1000 / 60;
-    const maxY3Position = 67;
+    const maxY3Position = 100;
     let rect = document.getElementById('rect4');
     let speedY3 = 1;
     let positionY3 = 0;

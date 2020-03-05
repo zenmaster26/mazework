@@ -1,0 +1,9 @@
+Goombas - #7F0000
+Coins - #808080
+Solution - #B702FF
+Sword - #0094FF
+Hollows - #FF0000
+Exit - #FFEA66
+Start - #007F0E
+Key - #FFA0FA
+Door - #FF4CF3

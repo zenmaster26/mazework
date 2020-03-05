@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/maze.css">
+    </head>
+    <body>
+        <p id="lives"></p>
+        <p id=winscreen></p>
+        <button onclick="window.location.replace('index.html')">Back to menu</button>
+        <h1>Welcome to the tutorial, to go back to the menu hit the "Back to menu" button.</h1>
+
+       <div style="margin-left: 40%; margin-top: 15%">
+        <table  id="mazecontainer" cellspacing="0"><tr>
+            <td onmouseover='wall()' class="wall"></td>
+            <td>A wall! If you touch it, you will die.</td></tr>
+            <tr><td onmouseover='start()' id="start"></td>
+            <td>The start of the level, touch this to reset everything or start over when you die!</td></tr>
+            <tr><td onmouseover='wall()' class="hollow"><img src="images/hollow.jpg"/></td>
+            <td>An enemy! He kills you when touched.</td></tr>
+            <tr><td class="path"><div id="rect1" class="rect timeout"><img src="images/goomba.png"/></div></td>
+            <td>A moving enemy! He also kills you when touched.</td></tr>
+            <tr><td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
+            <td>A coin! Adds 100 to your score, can you get them all?</td></tr>
+            <tr><td onmouseover='key1()' id="keyred"><img src="images/key.png"/></td>
+            <td>A key! What door could it go to..?</td></tr>
+            <tr><td onmouseover='wall()'id="doorred"><img src="images/door.jpg"/></td>
+            <td>A door! Maybe this could be where the key goes?</td></tr>
+            <tr><td onmouseover='blade(); style="visibility: hidden;"'class="sword"><img src="images/sword3.png"></td>
+            <td>Ah! A sword! This will kill enemies, at least the ones that don't move.</td></tr>
+            <tr><td onmouseover='win()' id="exit"><img src="images/1.jpg"></td>
+            <td>The way out! The exit!</td></tr>
+        </table>
+    </div>
+    
+    <script src="pic.js"> </script>
+</body>
+</html>

@@ -1,21 +1,29 @@
 var score = 0
 var lives = 3
 var sword = false
+
 document.getElementById("lives").innerHTML = "<img id='life' src=images/HeartBeating.gif> <img id='life' src=images/HeartBeating.gif> <img id='life' src=images/HeartBeating.gif>"
 function key1(){
     document.getElementById("keyred").style.visibility = "hidden"
     document.getElementById("doorred").style.visibility = "hidden"
 }
+function l3wall(){
+  document.getElementById("rect0").style.visibility = "hidden";
+  document.getElementById("rect1").style.visibility = "hidden";
+  document.getElementById("rect2").style.visibility = "hidden";
+  document.getElementById("rect3").style.visibility = "hidden";
+  document.getElementById("rect4").style.visibility = "hidden";
+}
 function wall(){
-        var b = document.getElementById("exit").style.visibility = "hidden";
-        var r = document.getElementById("rect0").style.visibility = "hidden";
-        var r1 = document.getElementById("rect1").style.visibility = "hidden";
+        document.getElementById("exit").style.visibility = "hidden"
+        
+       
+
+
         document.getElementById("keyred").style.visibility = "hidden";
-        document.getElementById("doorred").style.visibility = "hidden"
+        document.getElementById("doorred").style.visibility = "hidden";
+        
         var x = document.querySelectorAll(".wall");
-        document.getElementById("rect2").style.visibility = "hidden";
-        document.getElementById("rect3").style.visibility = "hidden";
-        document.getElementById("rect4").style.visibility = "hidden";
         var i;  
         for(i = 0; i <  x.length; i++){
                 x[i].style.visibility = "hidden";
@@ -58,17 +66,18 @@ function wall(){
                     
                     }
 }
-
+function l3start(){
+  document.getElementById("rect0").style.visibility = "visible"
+  document.getElementById("rect1").style.visibility = "visible"
+  document.getElementById("rect2").style.visibility = "visible"
+  document.getElementById("rect3").style.visibility = "visible"
+  document.getElementById("rect4").style.visibility = "visible"
+}
 function start(){
     
     document.getElementById("exit").style.visibility = "visible"
-    document.getElementById("rect0").style.visibility = "visible"
-    document.getElementById("rect1").style.visibility = "visible"
     document.getElementById("keyred").style.visibility = "visible"
     document.getElementById("doorred").style.visibility = "visible"
-    document.getElementById("rect2").style.visibility = "visible"
-    document.getElementById("rect3").style.visibility = "visible"
-    document.getElementById("rect4").style.visibility = "visible"
     
     var x = document.querySelectorAll(".wall");
     var i;  
@@ -112,14 +121,15 @@ function blade(){
 }
 
 
-
+function l3win(){
+  var r = document.getElementById("rect0").style.visibility = "hidden";
+  var r1 = document.getElementById("rect1").style.visibility = "hidden";
+  document.getElementById("rect2").style.visibility = "hidden";
+  document.getElementById("rect3").style.visibility = "hidden";
+  document.getElementById("rect4").style.visibility = "hidden";
+}
 function win(){
     var b = document.getElementById("exit").style.visibility = "hidden";
-    var r = document.getElementById("rect0").style.visibility = "hidden";
-    var r1 = document.getElementById("rect1").style.visibility = "hidden";
-    document.getElementById("rect2").style.visibility = "hidden";
-    document.getElementById("rect3").style.visibility = "hidden";
-    document.getElementById("rect4").style.visibility = "hidden";
     document.getElementById("keyred").style.visibility = "hidden";
     document.getElementById("doorred").style.visibility = "hidden"
         
@@ -160,6 +170,7 @@ function win(){
   //LEVEL 2
   //LEVEL 3
   function level3(){
+    level3 = true
     window.onload = () => {
         startSetTimeoutAnimation();
         startSetTimeoutAnimation2();

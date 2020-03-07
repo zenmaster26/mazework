@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        
         <link rel="stylesheet" type="text/css" href="css/maze.css">
     </head>
     <body>
@@ -12,261 +12,263 @@
        <div style="margin-left: 40%; margin-top: 15%">
         <table cellspacing="0" id="mazecontainer">
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='start()' id="start"></td>
-                <td></td>
-                <td onmouseover='wall()' class="hollow"><img src="images/hollow.jpg"/></td>
+                <td onmouseover='start(); l1start()' id="start"></td>
+                <td class="path"><div id="rect5" class="rect timeout"><img src="images/goomba.png"/></div></td>
+                <td onmouseover='wall(); l1wall()' class="hollow"><img src="images/hollow.jpg"/></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()' class="hollow"><img src="images/hollow.jpg"/></td>
+                <td onmouseover='wall(); l1wall()' class="hollow"><img src="images/hollow.jpg"/></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
-            </tr>
-            <tr>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-            </tr>
-            <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()' class="hollow"><img src="images/hollow.jpg"/></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+            </tr>
+            <tr>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()' class="hollow"><img src="images/hollow.jpg"/></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+            </tr>
+            <tr>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='blade(); style="visibility: hidden;"'class="sword"><img src="images/sword3.png"></td>
                 <td></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='key1()' id="keyred"><img src="images/key.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td class="path"><div id="rect6" class="rect timeout"><img src="images/goomba.png"/></div></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td onmouseover='addscore(); style="visibility: hidden;"'class="point"><img src="images/coin.png"/></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
-                <td onmouseover='wall()' class="hollow"><img src="images/hollow.jpg"/></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()' class="hollow"><img src="images/hollow.jpg"/></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td onmouseover='wall()'id="doorred"><img src="images/door.jpg"/></td>
-                <td onmouseover='win()' id="exit"><img src="images/1.jpg"></td>
+                <td></td>
+                <td></td>
+                <td onmouseover='wall(); l1wall()'id="doorred"><img src="images/door.jpg"/></td>
+                <td onmouseover='win(); l1win()' id="exit"><img src="images/1.jpg"></td>
             </tr>
             <tr>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
-                <td onmouseover='wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
+                <td onmouseover='wall(); l1wall()'class="wall"></td>
             </tr>
         </table>
+        <script src="pic.js"></script>
+        <script>level1()</script>
 </div>
 </body>
 </html>

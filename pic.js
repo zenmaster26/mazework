@@ -7,6 +7,16 @@ function key1(){
     document.getElementById("keyred").style.visibility = "hidden"
     document.getElementById("doorred").style.visibility = "hidden"
 }
+function l2wall(){
+  document.getElementById("rect7").style.visibility = "hidden"
+  document.getElementById("rect8").style.visibility = "hidden"
+  document.getElementById("rect9").style.visibility = "hidden"
+  document.getElementById("rect10").style.visibility = "hidden"
+}
+function l1wall(){
+  document.getElementById("rect5").style.visibility = "hidden";
+  document.getElementById("rect6").style.visibility = "hidden";
+}
 function l3wall(){
   document.getElementById("rect0").style.visibility = "hidden";
   document.getElementById("rect1").style.visibility = "hidden";
@@ -66,6 +76,16 @@ function wall(){
                     
                     }
 }
+function l1start(){
+  document.getElementById("rect5").style.visibility = "visible"
+  document.getElementById("rect6").style.visibility = "visible"
+}
+function l2start(){
+  document.getElementById("rect7").style.visibility = "visible"
+  document.getElementById("rect8").style.visibility = "visible"
+  document.getElementById("rect9").style.visibility = "visible"
+  document.getElementById("rect10").style.visibility = "visible"
+}
 function l3start(){
   document.getElementById("rect0").style.visibility = "visible"
   document.getElementById("rect1").style.visibility = "visible"
@@ -119,8 +139,16 @@ function blade(){
             }
     }
 }
-
-
+function l2win(){
+  document.getElementById("rect7").style.visibility = "hidden"
+  document.getElementById("rect8").style.visibility = "hidden"
+  document.getElementById("rect9").style.visibility = "hidden"
+  document.getElementById("rect10").style.visibility = "hidden"
+}
+function l1win(){
+  document.getElementById("rect5").style.visibility = "hidden"
+  document.getElementById("rect6").style.visibility = "hidden"
+}
 function l3win(){
   var r = document.getElementById("rect0").style.visibility = "hidden";
   var r1 = document.getElementById("rect1").style.visibility = "hidden";
@@ -168,6 +196,78 @@ function win(){
 }
 
   //LEVEL 2
+  function level2(){
+    window.onload = () => {
+      l2enemya();
+      l2enemyb();
+      l2enemyc();
+      l2enemyd();
+    }
+    function l2enemya() {
+      const refreshRate = 1000 / 60;
+      const maxY7Position = 50;
+      let rect = document.getElementById('rect7');
+      let speedY7 = 1;
+      let positionY7 = 0;
+      document.getElementById('rect7').onmouseover = function() {wall(); l2wall()};
+    
+      window.setInterval(() => {
+        positionY7 = positionY7 + speedY7;
+        if (positionY7 > maxY7Position || positionY7 < 0) {
+          speedY7 = speedY7 * (-1);
+        }
+        rect.style.bottom = positionY7 + 'px';
+      }, refreshRate);
+    }
+    function l2enemyb() {
+      const refreshRate = 1000 / 60;
+      const maxX7Position = 130;
+      let rect = document.getElementById('rect8');
+      let speedX7 = 1;
+      let positionX7 = 0;
+      document.getElementById('rect8').onmouseover = function() {wall(); l2wall()};
+    
+      window.setInterval(() => {
+        positionX7 = positionX7 + speedX7;
+        if (positionX7 > maxX7Position || positionX7 < 0) {
+          speedX7 = speedX7 * (-1);
+        }
+        rect.style.left = positionX7 + 'px';
+      }, refreshRate);
+    }
+    function l2enemyc() {
+      const refreshRate = 1000 / 60;
+      const maxY8Position = 45;
+      let rect = document.getElementById('rect9');
+      let speedY8 = 1;
+      let positionY8 = 0;
+      document.getElementById('rect9').onmouseover = function() {wall(); l2wall()};
+    
+      window.setInterval(() => {
+        positionY8 = positionY8 + speedY8;
+        if (positionY8 > maxY8Position || positionY8 < 0) {
+          speedY8 = speedY8 * (-1);
+        }
+        rect.style.top = positionY8 + 'px';
+      }, refreshRate);
+    }
+    function l2enemyd() {
+      const refreshRate = 1000 / 60;
+      const maxY9Position = 45;
+      let rect = document.getElementById('rect10');
+      let speedY9 = 1;
+      let positionY9 = 0;
+      document.getElementById('rect10').onmouseover = function() {wall(); l2wall()};
+    
+      window.setInterval(() => {
+        positionY9 = positionY9 + speedY9;
+        if (positionY9 > maxY9Position || positionY9 < 0) {
+          speedY9 = speedY9 * (-1);
+        }
+        rect.style.top = positionY9 + 'px';
+      }, refreshRate);
+    }
+  }
   //LEVEL 3
   function level3(){
     level3 = true
@@ -185,7 +285,7 @@ function win(){
         let rect = document.getElementById('rect0');
         let speedX = 1;
         let positionX = 0;
-        document.getElementById('rect0').onmouseover = function() {wall()};
+        document.getElementById('rect0').onmouseover = function() {wall();l3wall()};
       
         window.setInterval(() => {
           positionX = positionX + speedX;
@@ -202,7 +302,7 @@ function win(){
         let rect = document.getElementById('rect1');
         let speedY = 0.7;
         let positionY = 0;
-        document.getElementById('rect1').onmouseover = function() {wall()};
+        document.getElementById('rect1').onmouseover = function() {wall();l3wall()};
       
         window.setInterval(() => {
           positionY = positionY + speedY;
@@ -212,14 +312,14 @@ function win(){
           rect.style.top = positionY + 'px';
         }, refreshRate);
       }
-      //LEVEL 1
+
       function vObstacle1() {
         const refreshRate = 1000 / 60;
         const maxY1Position = 95;
         let rect = document.getElementById('rect2');
         let speedY1 = 1;
         let positionY1 = 0;
-        document.getElementById('rect2').onmouseover = function() {wall()};
+        document.getElementById('rect2').onmouseover = function() {wall();l3wall()};
       
         window.setInterval(() => {
           positionY1 = positionY1 + speedY1;
@@ -235,7 +335,7 @@ function win(){
         let rect = document.getElementById('rect3');
         let speedY2 = 1;
         let positionY2 = 0;
-        document.getElementById('rect3').onmouseover = function() {wall()};
+        document.getElementById('rect3').onmouseover = function() {wall();l3wall()};
       
         window.setInterval(() => {
           positionY2 = positionY2 + speedY2;
@@ -251,7 +351,7 @@ function win(){
         let rect = document.getElementById('rect4');
         let speedY3 = 1;
         let positionY3 = 0;
-        document.getElementById('rect4').onmouseover = function() {wall()};
+        document.getElementById('rect4').onmouseover = function() {wall(); l3wall()};
       
         window.setInterval(() => {
           positionY3 = positionY3 + speedY3;
@@ -263,4 +363,42 @@ function win(){
       }
     
       }
-      
+            //LEVEL 1
+            function level1(){
+              window.onload = () => {
+                L1enemyA();
+                L1enemyB();
+              }
+              function L1enemyA() {
+                const refreshRate = 1000 / 60;
+                const maxY5Position = 200;
+                let rect = document.getElementById('rect5');
+                let speedY5 = 1;
+                let positionY5 = 0;
+                document.getElementById('rect5').onmouseover = function() {wall(); l1wall()};
+              
+                window.setInterval(() => {
+                  positionY5 = positionY5 + speedY5;
+                  if (positionY5 > maxY5Position || positionY5 < 0) {
+                    speedY5 = speedY5 * (-1);
+                  }
+                  rect.style.top = positionY5 + 'px';
+                }, refreshRate);
+              }
+              function L1enemyB() {
+                const refreshRate = 1000 / 60;
+                const maxY6Position = 95;
+                let rect = document.getElementById('rect6');
+                let speedY6 = 1;
+                let positionY6 = 0;
+                document.getElementById('rect6').onmouseover = function() {wall(); l1wall()};
+              
+                window.setInterval(() => {
+                  positionY6 = positionY6 + speedY6;
+                  if (positionY6 > maxY6Position || positionY6 < 0) {
+                    speedY6 = speedY6 * (-1);
+                  }
+                  rect.style.top = positionY6 + 'px';
+                }, refreshRate);
+              }
+            }

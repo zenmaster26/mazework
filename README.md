@@ -1,5 +1,5 @@
 # mazework
-Le Maze - Cade Brown has Alzheimers. He told me to write this.
+Le Maze - Cade Brown has the goomba. He told me to write this.
 No he didn't.
 Why you lie.
 I don't?
